@@ -37,4 +37,10 @@ public interface InteractionApplicationCommandCallbackData {
      */
     @JsonProperty("allowed_mentions")
     Possible<AllowedMentionsData> allowedMentions();
+
+    /**
+     * A bitfield for message flags
+     */
+    Possible<Integer> flags();
+
 }
